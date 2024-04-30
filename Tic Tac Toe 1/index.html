@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="game-area">
+            <div class="turn-container">
+                <h3>Turn For</h3>
+                <div class="turn-box align"><i class="fas fa-times"></i></div>
+                <div class="turn-box align"><i class="far fa-circle"></i></div>
+                <div class="bg"></div>
+            </div>
+            <div class="main-grid">
+                <div class="box align" onclick="boxClick(0)"></div>
+                <div class="box align" onclick="boxClick(1)"></div>
+                <div class="box align" onclick="boxClick(2)"></div>
+                <div class="box align" onclick="boxClick(3)"></div>
+                <div class="box align" onclick="boxClick(4)"></div>
+                <div class="box align" onclick="boxClick(5)"></div>
+                <div class="box align" onclick="boxClick(6)"></div>
+                <div class="box align" onclick="boxClick(7)"></div>
+                <div class="box align" onclick="boxClick(8)"></div>
+            </div>
+            <h2 id="results"></h2>
+            <button id="play-again" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
